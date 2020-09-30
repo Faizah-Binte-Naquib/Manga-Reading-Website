@@ -1,0 +1,308 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head runat="server">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet2" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+
+
+    <link href="~/css/shared.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/mangadetails.css" rel="stylesheet" type="text/css" />
+
+    <title></title>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <div id="logo">
+            <a href="http://localhost:56683/HomePage/Index" class="active">
+                <img src="~/images/logo.png" />
+            </a>
+        </div>
+
+
+        <div class="dropdown">
+
+            <a href="">
+                <button class="dropbtn">
+                    Completed Manga
+                </button>
+            </a>
+        </div>
+
+
+        <div class="dropdown">
+            <a href="">
+                <button class="dropbtn">
+                    Latest Updates
+                </button>
+            </a>
+        </div>
+
+
+        <div class="search-container">
+            <form action="">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
+        <div class="dropdown">
+            <a href="http://localhost:56683/User/Profile">
+                <button class="dropbtn">
+                    <i class="fa fa-user"></i>
+                </button>
+            </a>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2 style="font-weight:bolder;font-family:Gill Sans, sans-serif">One Piece</h2>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <img src="~/manga/onepiece.jpg" />
+            </div>
+            <div class="col-md-1">
+                <div>
+                    <h5 style="font-weight:bold">Author:</h5>
+                </div>
+                <br />
+                <div>
+                    <h5 style="font-weight:bold">Status:</h5>
+                </div>
+                <br />
+                <div>
+                    <h5 style="font-weight:bold">Genre:</h5>
+                </div>
+                <br />
+                <div>
+                    <h5 style="font-weight:bold">Rating:</h5>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div style="padding-top:10px">
+                    Eichiro Oda
+                </div>
+                <br />
+                <div style="padding-top:15px">
+                    Ongoing
+                </div>
+                <br />
+                <div style="padding-top:15px">
+                    Adventure,Action,Shounen
+                </div>
+                <br />
+                <div style="padding-top:15px">
+                    5 star
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <input class="btn btn-success" type='button' value='Read Now' id='myButton' onClick='redirectOnClick()' />
+                <script>
+                    function redirectOnClick() {
+                        document.location = 'ReadManga';
+                    }
+                </script>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary">Add to Favourites</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <fieldset class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                </fieldset>
+
+            </div>
+        </div>
+
+
+        <br/>
+        <div class="row">
+            <div class="col-md-12">
+                <div style="font-weight:bold">Summary:</div>
+                <div><p>
+        The series focuses on Monkey D. Luffy, a young man who,
+        inspired by his childhood idol and powerful pirate "Red Haired" Shanks,
+        sets off on a journey from the East Blue Sea to find <span id="dots">...</span><span id="more">
+        the famed treasure One Piece and proclaim himself the King of the Pirates.
+        In an effort to organize his own crew, the Straw Hat Pirates (麦わら海賊団篇 Mugiwara Kaizoku-danhen),
+        Luffy rescues and befriends a swordsman named Roronoa Zoro, and they head off in search of the One Piece.
+        They are joined in their journey by Nami, a navigator and thief; Usopp, a sniper and a liar; and Sanji, a womanizing chef.
+        They acquire a ship named the Going Merry and engage in confrontations with notorious pirates of the East Blue.
+        As Luffy and his crew set out on their adventures, others join the crew later in the series, including Tony Tony Chopper,
+        a doctor and anthropomorphized reindeer; Nico Robin, an archaeologist and former assassin; Franky, a cyborg shipwright;
+        Brook, a skeletal musician and swordsman; and Jinbe, a fishman helmsman;
+        and they also acquire a new ship named the Thousand Sunny.
+        </span>
+        <button onclick="myFunction()" id="myBtn" style="color:white;background-color:gray">Read more</button>
+            </p></div>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-wrapper-scroll-y my-custom-scrollbar">
+
+                    <table class="table table-hover table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Chapter Name</th>
+                            
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td><a href="http://localhost:56683/Manga/ReadManga">Romance Dawns</a></td>
+                             
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>They call him Straw Hat Luffy</td>
+                       
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Enter Zoro Pirate Hunter</td>
+                            
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>The Great Captain Morgan</td>
+                            
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>The Pirate King and The Master Swordsman</td>
+                           
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>The first person</td>
+                           
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+
+
+    <div class="footercontainer" style="background-color:black;width:100%;color:yellow">
+        <div class="row" style="opacity:0.8">
+            <div class="col-sm-4">
+                <br />
+                <p>All Manga, Character Designs and Logos are © to their respective copyright holders</p>
+
+            </div>
+            <div class="col-sm-4">
+                <br />
+                <p> © 2010-2019 www.mango.me. Read Fastest Updated Free Manga Online at www.mango.me. </p>
+
+            </div>
+            <div class="col-sm-4">
+                <br />
+                <p><a style="color:yellow">Mango</a>| <a style="color:yellow">Home</a> | <a style="color:yellow">Latest Updates</a> | <a style="color:yellow">Contact Us</a> | <a style="color:yellow">Privacy Policy</a> | <a style="color:yellow">Terms of Service</a></p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/jquery-1.12.4.min.js">\x3C/script>')</script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+ 
+</body>
+
+</html>
+

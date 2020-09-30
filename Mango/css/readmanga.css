@@ -1,0 +1,33 @@
+﻿body {
+    background-color:black;
+}
+
+#chapter {
+    font-size: 15px;
+    padding: 10px 8px 10px 14px;
+    background-color: black;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+    #chapter:hover{
+        opacity:0.4;
+      
+    }
+
+
+
+    .row a
+    {
+        color:white;
+        text-decoration:none;
+    }
+
+.row a:hover {
+    opacity:0.7;
+}
+  

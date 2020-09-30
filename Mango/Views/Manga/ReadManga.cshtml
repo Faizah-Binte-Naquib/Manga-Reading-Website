@@ -1,0 +1,183 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+
+    <meta name="viewport" content="width=device-width" />
+    <title>ReadManga</title>
+
+
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+    <head runat="server">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet2" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+        <link href="~/css/shared.css" rel="stylesheet" type="text/css" />
+        <link href="~/css/readmanga.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <div id="logo">
+                <a href="http://localhost:56683/HomePage/Index" class="active">
+                    <img src="~/images/logo.png" />
+                </a>
+            </div>
+
+
+            <div class="dropdown">
+
+                <a href="">
+                    <button class="dropbtn">
+                        Completed Manga
+                    </button>
+                </a>
+            </div>
+
+
+            <div class="dropdown">
+                <a href="">
+                    <button class="dropbtn">
+                        Latest Updates
+                    </button>
+                </a>
+            </div>
+
+
+            <div class="search-container">
+                <form action="">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
+            <div class="dropdown">
+                <a href="http://localhost:56683/User/Profile">
+                    <button class="dropbtn">
+                        <i class="fa fa-user"></i>
+                    </button>
+                </a>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
+                <div style="text-align: center; padding-right:10px;"><h3><a href="http://localhost:56683/Manga/MangaDetails">One Piece</a></h3></div>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-default" style="width:30%;margin-left:330px;margin-top:5px;">Previous Chapter</button>
+            </div>
+
+            <div class="col-md-4">
+                <form action="">
+                    <select name="chapter" id="chapter">
+                        <option value="1">Chapter 1</option>
+                        <option value="2">Chapter 2</option>
+                        <option value="3">Chapter 3</option>
+                        <option value="4">Chapter 4</option>
+                    </select>
+                    <br><br>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-default" style="width:30%;margin-top:5px;">Next Chapter</button>
+            </div>
+        </div>
+
+
+
+
+
+        <div>
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <embed src="~/files/chapter1.pdf#toolbar=0" type="application/pdf" width="475px" height="610px" />
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-default" style="width:30%;margin-left:330px;margin-top:5px;">Previous Chapter</button>
+            </div>
+
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-default" style="width:30%;margin-top:5px;">Next Chapter</button>
+            </div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+
+
+
+        <div class="footercontainer" style="background-color:black;width:100%;color:yellow">
+            <div class="row" style="opacity:0.8">
+                <div class="col-sm-4">
+                    <br />
+                    <p>All Manga, Character Designs and Logos are © to their respective copyright holders</p>
+
+                </div>
+                <div class="col-sm-4">
+                    <br />
+                    <p> © 2010-2019 www.mango.me. Read Fastest Updated Free Manga Online at www.mango.me. </p>
+
+                </div>
+                <div class="col-sm-4">
+                    <br />
+                    <p><a style="color:yellow">Mango</a>| <a style="color:yellow">Home</a> | <a style="color:yellow">Latest Updates</a> | <a style="color:yellow">Contact Us</a> | <a style="color:yellow">Privacy Policy</a> | <a style="color:yellow">Terms of Service</a></p>
+
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+</html>
